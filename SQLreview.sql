@@ -111,11 +111,15 @@ FROM invoice
 WHERE total < 5; 
 
 SELECT  COUNT(invoice_id)
-FROM invoice;
-WHERE billing_state IN ('CA','TX','AZ') 
+FROM invoice
+WHERE billing_state IN ('CA','TX','AZ'); 
+
 SELECT  AVG(total)
 FROM invoice;
 
 SELECT  SUM(total)
-FROM invoice;
+FROM invoice; 
 
+
+SELECT  SUM(total)
+FROM invoice; 
